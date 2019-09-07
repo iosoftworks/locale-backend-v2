@@ -1,0 +1,1 @@
+web: gunicorn localev2_project.wsgi --log-file -
