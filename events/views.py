@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from .models import Event
 
@@ -7,3 +7,7 @@ from .models import Event
 class EventListView(ListView):
     model = Event
     template_name = 'home.html'
+
+class EventDetailView(DetailView):
+    model = Event
+    template_name = 'event_detail.html'
