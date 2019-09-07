@@ -10,4 +10,5 @@
         <li>{{ event.location }}</li>
         <li>{{ event.price }}</li>
     </ul>
+    <a href="{% url 'event_edit' event.pk %}">Edit</a> | <a href="{% url 'event_delete' event.pk %}">Delete</a>
 {% endblock content %}

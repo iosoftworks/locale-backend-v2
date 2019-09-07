@@ -3,7 +3,7 @@
 {% block content %}
     <div class="text-center">
         <h1>Welcome to <span class="logo">localè</span></h1>
-        <a class="sapphire-btn" href="#">Add event</a>
+        <a class="sapphire-btn" href="{% url 'event_new' %}">Add event</a>
     </div>
     {% for event in object_list %}
     <div class="card">
