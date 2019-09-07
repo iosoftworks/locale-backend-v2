@@ -18,3 +18,6 @@ class Event(models.Model):
     
     def get_absolute_url(self):
         return reverse('event_detail', args=[str(self.id)])
+    
+    def get_total_price(self):
+        return Event.objects.aggregate(Sum('price'))

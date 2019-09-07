@@ -53,3 +53,7 @@ a {
     background-color: #166088;
     color: white;
 }
+
+.events-list {
+    margin-bottom: 24px;
+}
