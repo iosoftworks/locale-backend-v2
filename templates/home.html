@@ -1,11 +1,59 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
     <div class="text-center">
         <h1>Welcome to <span class="logo">localé</span></h1>
         <a class="sapphire-btn" href="{% url 'event_new' %}">Add event</a>
     </div>
+    <section class="suggested">
+        <h2>Sugested events</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-responsive" src="{% static 'img/teen-brain.jpg' %}">
+                        <h4>Teen Brain Napier</h4>
+                        <p>Thu 28 Nov 7:30pm / Public Talks & Tours</p>
+                        <a href="#">More</a><a style="float:right;" href="#">+ Add</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-responsive" src="{% static 'img/jewellery.jpg' %}">
+                        <h4>Napier Jewellery Weekend</h4>
+                        <p>Sat 2 Nov 10:00am / Education</p>
+                        <a href="#">More</a><a style="float:right;" href="#">+ Add</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-responsive" src="{% static 'img/cuba.jpg' %}">
+                        <h4>Son de Cuba</h4>
+                        <p>Sat 28 Sep 7:00pm / Latin</p>
+                        <a href="#">More</a><a style="float:right;" href="#">+ Add</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-responsive" src="{% static 'img/womens-expo.jpg' %}">
+                        <h4>Womens' Lifestyle Expo Napier</h4>
+                        <p>Sat 2 Nov 10:00am / Lifestyle Shows, Expos</p>
+                        <a href="#">More</a><a style="float:right;" href="#">+ Add</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
     <section class="events-list">
+        <h2>Your day:</h2>
     {% for event in object_list %}
     <div class="card">
         <div class="card-body">

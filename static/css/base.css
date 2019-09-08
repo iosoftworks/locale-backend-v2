@@ -61,3 +61,17 @@ a {
 .navbar-brand {
     line-height: 24px;
 }
+
+section {
+    margin-bottom: 24px;
+}
+
+.suggested {
+    padding: 12px;
+    background-color: #fafafa;
+}
+
+.suggested img {
+    width: 100%;
+    height: auto;
+}
